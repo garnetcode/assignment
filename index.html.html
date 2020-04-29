@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/stylez.css">
+</head>
+<body>
+
+<h2>ASSIGNMENT</h2>
+<div>
+  <table>
+    <tr>
+        <th><strong>Name</strong></th>
+        <th><strong>Bounces</strong></th>
+    </tr>
+    <tr>
+        <td>Tendai</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>Kudzai</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>Taurai</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Nyika</td>
+        <td>1000</td>
+    </tr>
+    
+
+</table>
+
+<table>
+    <tr>
+        <th><strong>Name</strong></th>
+        <th><strong>Favourite Pasta</strong></th>
+    </tr>
+    <tr>
+        <td>Tendai</td>
+        <td>Sadza and Madora</td>
+    </tr>
+    <tr>
+        <td>Kudzai</td>
+        <td>Sadza and Chicken</td>
+    </tr>
+    <tr>
+        <td>Taurai</td>
+        <td>Gango</td>
+    </tr>
+</table>
+  
+</div>
+
+<button onclick="zebra()">Zebra</button>
+<button onclick="normal()">Normal</button>
+
+<script>
+
+function zebra() {
+     var style = document.createElement('style');
+    document.head.appendChild(style);
+     style.sheet.insertRule('tr:nth-child(odd) {background-color: grey;}');
+  }
+
+ function normal() {
+     var style = document.createElement('style');
+    document.head.appendChild(style);
+    style.sheet.insertRule('tr:nth-child(odd) {background-color: white;}');
+ }
+</script>
+
+</body>
+</html>
